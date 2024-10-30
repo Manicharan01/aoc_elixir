@@ -1,4 +1,12 @@
-intcodes = File.stream!("C:/Users/Manicharan Kollipara/Desktop/aoc/day2.txt", :line)
-|> Enum.map(fn x -> String.split(x, ",") end)
+defmodule Traverse do
+  def calculate_the_operation()
+end
 
-IO.puts(hd(intcodes))
+[file_content] =
+  File.stream!("/home/charan/Downloads/aoc/day2.txt", :line)
+  |> Enum.to_list()
+  |> Enum.map(fn x -> String.trim(x) end)
+
+intcodes = String.split(file_content, ",")
+
+IO.inspect(intcodes)

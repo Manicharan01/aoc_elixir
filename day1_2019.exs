@@ -8,7 +8,7 @@ defmodule Recursion do
   end
 end
 
-File.stream!("C:/Users/Manicharan Kollipara/Desktop/aoc/day1.txt", :line)
+File.stream!("/home/charan/Downloads/aoc/day1.txt", :line)
 |> Enum.to_list()
 |> Enum.map(fn x -> String.trim(x) end)
 |> Enum.filter(fn x -> String.trim(x) != "" end)
